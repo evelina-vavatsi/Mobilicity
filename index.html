@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobiliCity - Sustainable Urban Mobility</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./home.html">Visualizations</a>
+            <a href="./solutions.html">Solutions</a>
+            <a href="./credits.html">Credits</a>
+            <a href="./video.html">Video</a>
+        </nav>
+    </header>
+
+    <section id="section1" class="section first-section">
+        <video autoplay muted loop id="bgVideo">
+            <source src="./images/21116-315137080_large.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="title" style="padding: 0%;">MobiliCity</div>
+            <div class="content" style="padding: 0%">Innovating Urban Mobility for a Sustainable Tomorrow</div>
+        </div>
+    </section>
+
+    <section id="home" class="section">
+        <div class="content home-content">
+            <h2>What is Sustainable Urban Mobility?</h2>
+            <p>Sustainable urban mobility focuses on developing transport systems that enable free, safe, and efficient movement in urban areas with minimal environmental impact. It prioritizes public transit, non-motorized transport, and clean technologies to promote healthier cities and reduce fossil fuel reliance.</p>
+
+            <h2>Review of Sustainable Urban Mobility Indicators Internationally</h2>
+            <p>Globally, sustainable urban mobility indicators include air quality, modal split, accessibility, and traffic congestion. Monitoring these indicators helps cities track progress, make informed decisions, and meet international goals like the Sustainable Development Goals (SDGs). Examples from around the world highlight how policies can improve urban mobility and reduce environmental effects.</p>
+
+            <h2>Importance and Challenges of Visualizing Mobility Data</h2>
+            <p>Visualizing mobility data is key to understanding traffic patterns, evaluating transport policies, and informing policymakers. Challenges include integrating diverse data sources, ensuring accuracy, and presenting data in an accessible way to support sustainable transport strategies.</p>
+
+            <h2>Join Us at MobiliCity</h2>
+            <p>At MobiliCity, we are dedicated to reshaping urban mobility for a greener, more connected future. As the pulse of our modern economy, transportation not only fuels personal freedom and commerce but also shapes our daily interactions. From quickening our commutes to enabling last-minute gift deliveries, transport systems keep our world moving quickly and efficiently. However, traditional transport models are major pollution contributors across continents, accounting for about 28% of total emissions in the European Union and 37% globally. With rising emissions, balancing efficiency and environmental protection is more urgent than ever.</p>
+
+            <p>At MobiliCity, we understand that sustainable transport is the foundation of not only advancing economic prosperity but also combating the climate crisis. Positioned at the forefront of innovation, we are dedicated to leading in sustainable mobility solutions. Join us as we drive towards a future where urban mobility is not just a part of the economy but a key player in sustaining our planet. Together, we can innovate our way to a sustainable tomorrow.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> All rights reserved.</p>
+    </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyrightYear').textContent = currentYear;
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

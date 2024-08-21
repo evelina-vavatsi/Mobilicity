@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Development Solutions for Mobility - MobiliCity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+        /* Custom styles for navigation arrows */
+        .nav-arrow {
+            position: fixed;
+            bottom: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .nav-arrow:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .nav-arrow img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav-arrow.prev {
+            left: 100px;
+            transform: translateY(50%) rotate(180deg);
+            opacity: 1;
+        }
+
+        .nav-arrow.next {
+            right: 100px;
+            transform: translateY(50%);
+            opacity: 1;
+        }
+
+        /* Styling for better text visibility */
+        section {
+            color: #fff;
+            padding: 60px 20px;
+        }
+
+        .content h1, .content h2, .content p {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Image styling */
+        .content img {
+            max-width: 100%;
+            height: 100%;
+            margin-top: 100px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            padding: 0%;      
+          }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header nav a {
+            color: red; /* Highlight the home link in red */
+        }
+
+        header nav a:not(:first-child) {
+            color: #fff;
+        }
+
+        @media (max-width: 1400px) {
+        .nav-arrow.prev {
+            left: 100px;
+            transform: translateY(50%) rotate(180deg);
+            opacity: 0;
+        }
+
+        .nav-arrow.next {
+            right: 100px;
+            transform: translateY(50%);
+            opacity: 0;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./home.html">Visualizations</a>
+            <a href="./solutions.html">Solutions</a>
+            <a href="./credits.html">Credits</a>
+            <a href="./video.html">Video</a>
+        </nav>
+    </header>
+
+    <section id="introduction" class="section">
+        <div class="content">
+            <h1>Sustainable Development Solutions for Mobility</h1>
+            <p>At MobiliCity, our commitment to sustainable urban mobility drives us to develop solutions that are not only innovative but also essential for the health of our planet. In this section, explore how we're transforming the way cities move, breathe, and thrive:</p>
+        </div>
+    </section>
+
+    <section id="electrification" class="section">
+        <div class="content">
+            <h2>Electrification of Public Transit</h2>
+            <p>We are spearheading initiatives to replace conventional public transit with electric buses and trams. These vehicles reduce carbon emissions significantly and operate more quietly, improving the quality of urban life.</p>
+            <img src="./images/Εικόνα1.png" alt="Electrification of Public Transit">
+        </div>
+    </section>
+
+    <section id="traffic-management" class="section">
+        <div class="content">
+            <h2>Smart Traffic Management Systems</h2>
+            <p>Leveraging AI and IoT technologies, our smart traffic solutions optimize traffic flow, reduce congestion, and decrease idling times. This leads to lower emissions and more efficient urban transport networks.</p>
+            <img src="./images/Εικόνα2.png" alt="Smart Traffic Management Systems">
+        </div>
+    </section>
+
+    <section id="cycling-walking" class="section">
+        <div class="content">
+            <h2>Cycling and Walking Infrastructure</h2>
+            <p>To encourage non-motorized transport, we're involved in projects to expand and improve cycling lanes and pedestrian paths. These initiatives not only promote health and reduce pollution but also enhance the accessibility and aesthetic appeal of urban environments.</p>
+            <img src="./images/Εικόνα3.jpg" alt="Cycling and Walking Infrastructure">
+        </div>
+    </section>
+
+    <section id="micro-mobility" class="section">
+        <div class="content">
+            <h2>Micro-Mobility</h2>
+            <p>We support the use of small electric vehicles, such as e-scooters and e-bikes, which offer convenient and low-impact transportation options for urban dwellers.</p>
+            <img src="./images/Εικόνα4.jpg" alt="Micro-Mobility">
+        </div>
+    </section>
+
+    <section id="energy-efficiency" class="section">
+        <div class="content">
+            <h2>Energy Efficiency</h2>
+            <p>Enhancing the energy efficiency of vehicles and infrastructure, we also utilize renewable energy sources for charging electric vehicles, reinforcing our commitment to sustainability.</p>
+            <img src="./images/Εικόνα5.jpg" alt="Energy Efficiency">
+        </div>
+    </section>
+
+    <section id="shared-mobility" class="section">
+        <div class="content">
+            <h2>Shared Mobility Platforms</h2>
+            <p>We promote car-sharing and bike-sharing programs to decrease the number of vehicles on the road, thus lowering urban congestion and emissions. Our platforms use real-time data to improve user experience and system efficiency.</p>
+            <img src="./images/Εικόνα6.jpg" alt="Shared Mobility Platforms">
+        </div>
+    </section>
+
+    <section id="incentives" class="section">
+        <div class="content">
+            <h2>Incentives for Sustainable Mobility</h2>
+            <p>By providing financial incentives for the use of sustainable transport and conducting educational campaigns, we raise awareness about the benefits of eco-friendly mobility solutions.</p>
+            <img src="./images/Εικόνα7.png" alt="Incentives for Sustainable Mobility">
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="content">
+            <h2>Sustainability Education and Advocacy</h2>
+            <p>Understanding the importance of community involvement, we conduct workshops and seminars to educate the public about the benefits of sustainable mobility. We also work with local governments to advocate for policies that support green transport solutions.</p>
+            <img src="./images/Eικόνα8.jpg" alt="Sustainability Education and Advocacy">
+        </div>
+    </section>
+
+    <section id="urban-design" class="section">
+        <div class="content">
+            <h2>Innovative Urban Design</h2 >
+            <p>Collaborating with urban planners, we are designing 'green corridors' in cities. These corridors are dedicated spaces where nature and transport coexist, featuring abundant greenery alongside paths for electric and non-motorized transport.</p>
+            <img src="./images/Εικόνα9.png" alt="Innovative Urban Design">
+        </div>
+    </section>
+
+    <section id="partnerships" class="section">
+        <div class="content">
+            <h2>Partnerships for a Greener Tomorrow</h2>
+            <p>We forge partnerships with tech companies, environmental organizations, and academic institutions to pilot cutting-edge technologies in sustainable transport, from hydrogen fuel cells to advanced battery systems.</p>
+            <img src="./images/Εικόνα10.jpg" alt="Partnerships for a Greener Tomorrow">
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> All rights reserved.</p>
+    </footer>
+
+    <div class="nav-arrow prev" onclick="scrollToPreviousSection()">
+        <img src="./images/next.png" alt="Previous">
+    </div>
+    <div class="nav-arrow next" onclick="scrollToNextSection()">
+        <img src="./images/next.png" alt="Next">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

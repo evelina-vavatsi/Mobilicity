@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./home.html">Visualizations</a>
+            <a href="./solutions.html">Solutions</a>
+            <a href="./credits.html">Credits</a>
+            <a href="./video.html">Video</a>
+        </nav>
+    </header>
+
+    <section id="section1" class="section first-section">
+        <video autoplay muted loop id="bgVideo">
+            <source src="./images/21116-315137080_large.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="title">Visualizations</div>
+            <div class="content" style="padding: 0%;">Innovating Urban Mobility for a Sustainable Tomorrow</div>
+        </div>
+    </section>
+
+
+    <section id="section2" class="section gradient-section">
+       
+        <div class="title" style="text-align: center; margin-bottom: 60px;">2022 Daily Traffic Data Summary for Greece</div>
+    
+        <div class="subsections" style="text-align: center;">
+            <div class="subsection left">
+            <div class="content" style="max-width: 100%; margin: auto; color: white;">
+                <p>The visualization "2022 Daily Traffic Data Summary for Greece" features a dual-axis chart showing yearly traffic measurements. It includes a green line for total daily traffic counts, ranging from about 344,000 to 1,002,126, and a blue line for day-to-day percentage changes (DOD), which vary from -80.15% to over 526.03%.</p>
+                <p>Total traffic counts fluctuate significantly due to factors like weekdays, weekends, holidays, and seasonal tourism, with peaks suggesting high traffic days linked to special events. The DOD, indicated by the blue line, highlights daily traffic variations important for spotting specific events or disruptions like public strikes or severe weather, which drastically affect traffic patterns.</p>
+                <p>This visual tool aids traffic analysts and urban planners in monitoring, understanding, and planning for traffic trends and infrastructure needs in Greece.</p>
+            </div>
+        </div>
+
+        <div class="subsection right">
+            <div id="vizContainer1" style="margin: auto; width: 80%;"></div>
+            <script type="text/javascript">
+                var vizContainer1 = document.getElementById('vizContainer1');
+                var vizUrl1 = "https://public.tableau.com/views/TrafficDataSummary2022/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options1 = {
+                    width: '100%',
+                    height: '600px'
+                };
+                var viz1 = new tableau.Viz(vizContainer1, vizUrl1, options1);
+            </script>
+        </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <section id="section5" class="section gradient-section">
+       
+        <div class="title" style="text-align: center; margin-bottom: 100px; margin-top: 200px;">Urban population in Greece with access to public transport</div>
+    
+        <div class="subsections" style="text-align: center;">
+            <div class="subsection left">
+            <div class="content" style="max-width: 100%; margin: auto; color: white; padding: 5%;">
+                <p>This visualization shows the percentage of urban populations with convenient access to public transport across various European cities. It highlights the effectiveness of public transport infrastructure, presenting cities with high accessibility and identifying areas needing improvement.</p>
+                <p>Cities like Athens and Patras have over 95% of their urban population with access to public transport, whereas cities like Ioánnina and Chanía show lower accessibility, indicating the need for better public transport services.</p>
+            </div>
+        </div>
+
+        <div class="subsection right">
+            <div id="vizContainer4" style="margin: auto; width: 80%;"></div>
+            <script type="text/javascript">
+                var vizContainer4 = document.getElementById('vizContainer4');
+                var vizUrl4 = "https://public.tableau.com/views/Urbanpopulationwithaccesstopublictransport/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options4 = {
+                    width: '100%',
+                    height: '600px'
+                };
+                var viz4 = new tableau.Viz(vizContainer4, vizUrl4, options4);
+            </script>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="section9" class="section gradient-section">
+       
+        <div class="title" style="text-align: center; margin-bottom: 100px; margin-top: 400px;">CO2 Emissions by Country and Year</div>
+    
+        <div class="subsections" style="text-align: center;">
+            <div class="subsection left">
+            <div class="content" style="max-width: 100%; margin: auto; color: white; padding: 5%;">
+                <p>The visualizations track CO2 emissions in Europe, showing changes with a color gradient from green (lower emissions) to red (higher emissions). In 2015, Central European countries like Germany and Poland had high emissions, while Northern and Western Europe had lower levels. Greece had moderate emissions.</p>
+                <p>By 2020, emissions decreased across Europe, particularly in high-emission countries like Germany and Poland, reflecting effective carbon reduction policies. Greece also reduced its emissions, following the broader European trend.</p>
+                <p>Projections for 2030 suggest further emission reductions across Europe, with countries increasingly moving toward green, indicating ongoing efforts against climate change. Greece is expected to continue its downward trend.</p>
+                <p>This data highlights Europe's progress in reducing emissions, emphasizing the role of environmental policies and sustainable practices in achieving climate goals.</p>
+            </div>
+        </div>
+
+        <div class="subsection right">
+            <div id="vizContainer9" style="margin: auto; width: 80%;"></div>
+            <script type="text/javascript">
+                var vizContainer9 = document.getElementById('vizContainer9');
+                var vizUrl9 = "https://public.tableau.com/shared/MF2YTYWNB?:display_count=n&:origin=viz_share_link";
+                var options9 = {
+                    width: '100%',
+                    height: '600px'
+                };
+                var viz7 = new tableau.Viz(vizContainer9, vizUrl9, options9);
+            </script>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="section6" class="section gradient-section">
+       
+        <div class="title" style="text-align: center; margin-bottom: 100px; margin-top: 400px;">Ambient air pollution attributable deaths (Greece 2019)</div>
+    
+        <div class="subsections" style="text-align: center;">
+            <div class="subsection left">
+            <div class="content" style="max-width: 100%; margin: auto; color: white; padding: 5%;">
+                <p>The chart details deaths in Greece in 2019 due to ambient air pollution, broken down by cause and sex. Ischaemic heart disease was the leading cause, with more males affected than females. Deaths from chronic obstructive pulmonary disease (COPD) and lower respiratory infections also showed higher rates among males. Stroke deaths linked to air pollution were notably high for both sexes, slightly more so for males. This data emphasizes the serious health impact of air pollution in Greece and the importance of improving air quality and public health measures.</p>
+            </div>
+        </div>
+
+        <div class="subsection right">
+            <div id="vizContainer5" style="margin: auto; width: 80%;"></div>
+            <script type="text/javascript">
+                var vizContainer5 = document.getElementById('vizContainer5');
+                var vizUrl5 = "https://public.tableau.com/views/_17204577556830/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options5 = {
+                    width: '100%',
+                    height: '600px'
+                };
+                var viz5 = new tableau.Viz(vizContainer5, vizUrl5, options5);
+            </script>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="section3" class="section tableau-section">
+        <div class="title" style="text-align: center; margin-top: 400px;">Stock of Vehicles by Country from 2018 – 2022</div>
+        <div class="subsections" style="text-align: center;">
+            
+            <div class="content" style="padding-left:20%; padding-right:20%;">
+                <p>This visualization shows the stock of vehicles by country in Europe from 2018 to 2022, using a color-coded map to indicate vehicle density. Darker colors represent higher vehicle densities, highlighting regional differences. Interactive features like year selection and a "Show history" option allow users to observe changes over time and analyze trends influenced by economic and policy changes.</p>            
+                <p>In countries like Germany, Italy, and France, vehicle stocks increased between 2018 and 2022 due to economic recovery, accessible car financing, and COVID-19 related shifts towards personal vehicle use. Automotive incentives and eco-friendly policies also supported this rise.</p>
+                <p>For Greece, the vehicle stock showed a slight increase from 6,646,807 in 2018 to 6,786,186 in 2019, followed by a sharp decline to 5,777,241 by 2022. This decrease is attributed to the pandemic's economic impact, mobility restrictions, and shifts towards greener transportation, along with global supply chain challenges affecting vehicle availability.</p>
+            </div>
+    
+            <div id="vizContainer2" style="margin: auto; width: 80%; height: 600px;"></div>
+            <script type="text/javascript">
+                var vizContainer2 = document.getElementById('vizContainer2');
+                var vizUrl2 = "https://public.tableau.com/views/StockofVehiclesbyCountryfrom2018-2022/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options2 = {
+                    width: '100%',
+                    height: '800px'
+                };
+                var viz2 = new tableau.Viz(vizContainer2, vizUrl2, options2);
+            </script>
+        </div>
+    </section>
+
+
+
+    <section id="section7" class="section gradient-section">
+       
+        <div class="title" style="text-align: center; margin-bottom: 100px; margin-top: 400px;">Number of private vehicles in Greece 1985-2023</div>
+    
+        <div class="subsections" style="text-align: center;">
+            <div class="subsection left">
+            <div class="content" style="max-width: 100%; margin: auto; color: white; padding: 5%;">
+                <p>The chart shows a significant increase in the number of private vehicles in Greece from 1985 to 2023, with passenger cars experiencing the most substantial growth, followed by motorcycles and trucks. This trend indicates a growing preference for private transportation over public options, raising concerns about traffic congestion, environmental pollution, and urban planning challenges. As vehicle numbers rise, there is a pressing need for improved public transportation, sustainable transport alternatives, and better urban infrastructure to manage these issues and reduce the reliance on private vehicles.</p>
+            </div>
+        </div>
+
+        <div class="subsection right">
+            <div id="vizContainer7" style="margin: auto; width: 80%;"></div>
+            <script type="text/javascript">
+                var vizContainer7 = document.getElementById('vizContainer7');
+                var vizUrl7 = "https://public.tableau.com/views/_17204570579280/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options7 = {
+                    width: '100%',
+                    height: '600px'
+                };
+                var viz7 = new tableau.Viz(vizContainer7, vizUrl7, options7);
+            </script>
+        </div>
+        </div>
+    </section>
+
+
+        
+    <section id="section4" class="section tableau-section" style="margin-bottom: 600px;">
+        <div class="title" style="text-align: center; margin-top: 400px;">Distribution of Energy Sources for Vehicles in European Countries</div>
+        <div class="subsections" style="text-align: center;">
+            
+            <div class="content" style="padding-left:20%; padding-right:20%;"> 
+                <p>This visualization ranks European countries by their use of alternative fuels in vehicles. It shows the leading nations in using cleaner energy, showing the move towards sustainable transport solutions. The data emphasizes the importance of increasing efforts and policies to promote alternative fuels for environmental and economic benefits.</p>           
+            </div>
+    
+            <div id="vizContainer3" style="margin: auto; width: 80%; height: 600px;"></div>
+            <script type="text/javascript">
+                var vizContainer3 = document.getElementById('vizContainer3');
+                var vizUrl3 = "https://public.tableau.com/views/DistributionofEnergySourcesforVehiclesinEuropeanCountries/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+                var options3 = {
+                    width: '100%',
+                    height: '800px'
+                };
+                var viz3 = new tableau.Viz(vizContainer3, vizUrl3, options3);
+            </script>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> All rights reserved.</p>
+    </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyrightYear').textContent = currentYear;
+    </script>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

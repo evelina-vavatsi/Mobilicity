@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainer Video - MobiliCity</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+            color: lightblue;
+        }
+
+        .content p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            width: 1000px;
+            height: 100%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+        }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./home.html">Visualizations</a>
+            <a href="./solutions.html">Solutions</a>
+            <a href="./credits.html">Credits</a>
+            <a href="#explainer-video">Video</a>
+        </nav>
+    </header>
+
+    <section id="explainer-video" class="section">
+        <div class="content" style="padding-left:20%; padding-right:20%;">
+            <h1>Explainer Video</h1>
+            <p>Dive into our Vision with the MobiliCIty Explainer Video! 🎥✨</p>
+            <p>Ready to see how urban mobility can be smart, sustainable, and style-forward? Click to watch our video and journey through the streets of tomorrow. Discover how we're turning everyday commutes into eco-friendly adventures and tackling city pollution head-on with our groundbreaking solutions. Our explainer video takes you through all the key sections of our website, showcasing interactive Tableau visualizations of mobility in Europe and Greece, detailed sustainable development solutions for mobility, and insights from our dedicated team. Whether it’s electric vehicles zipping through lanes or advanced traffic systems reducing congestion, we’re paving the way for cleaner, greener cities. Join us, and be part of the movement that drives towards a sustainable tomorrow. Let's revolutionize urban mobility together—watch now!</p>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YYDyIUJRoOw" frameborder="0" allowfullscreen></iframe>
+        </div>ρε
+    </section>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> All rights reserved.</p>
+    </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyrightYear').textContent = currentYear;
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
